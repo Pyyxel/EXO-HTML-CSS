@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Simplon Reproduction</title>
+
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Arvo">
+  <!-- Font Awesome -->
+  
+  <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" data-search-pseudo-elements></script>
+
+  <!-- Custom styles for this template -->
+  <link href="css/custom.css" rel="stylesheet">
+</head>
+
+<body>
+  <a id="button"></a>
+  <nav>
+    <!-- Votre code ici -->
+    <div class="container cont1">
+      <div class="nav-img">
+        <img src="image/top-logo.png" alt="">
+      </div>
+      <div class="btn-nav">
+        <a href="#who" class="who">WHO WE ARE</a>
+        <a href="#get-involved" class="get">GET INVOLVED</a>
+      </div>
+
+    </div>
+  </nav>
+
+  <div id="home">
+    <!-- Votre code ici -->
+    <div class="img-back" style="background-image: url(image/hero-image.jpg);">
+      <div class="div-title">
+        <h1 class="titre">Our goal is to ispire Tallahasse to write 1,000,000 lines of code_</h1>
+      </div>
+      <div class="div-para">
+        <p class="para">All over the country people are taking the <strong>HOUR OF CODE</strong> challenge isued by
+          <strong>CODE.org.</strong>Millions of line of code are being written. In the capital of Florida, Tallahasse,
+          the community is taking the challenge and pur goal is to write 1,000,000 lines of code_</p>
+      </div>
+      <a class="btn" role="button">
+        <p>Learn More »</p>
+      </a>
+      <div class="div-img" align=center>
+        <img src="image/code.png" class="img">
+      </div>
+    </div>
+    <div id="who">
+      <!-- Votre code ici -->
+      <div class="who-div">
+        <div class="who-img">
+          <img src="image/academy-brand-med.png">
+          <h3 class="h3-titre">WHO WE ARE</h3>
+          <hr class="hr1">
+        </div>
+        <div class="we-para">
+          <p class="paragraphe">We are<span class="Mass"> MASSIVE Academy</span>. We aim to improve education through
+            both methode - effective project-based learning - and material - by teaching skils that are applicable to
+            improving your life today.</p>
+        </div>
+      </div>
+
+    </div><!-- /#who -->
+
+    <div id="get-involved">
+      <!-- Votre code ici -->
+      <div id="get-involved">
+
+        <h2 style="color:#f74c3c"> GET INVOLVED </h2>
+        <hr>
+        <div id="get-involved-flex">
+          <div class="get-involved-bloc">
+            <i class="fa fa-user fa-inverse"></i>
+            <h2>STUDENTS</h2>
+            <p>
+              Want to learn how to code? Want to help us get to 1,000,000 lines? Click the button below and we'll let
+              you know
+              how to get involved.
+            </p>
+            <button>Start Learning »</button>
+          </div>
+          <div class="get-involved-bloc">
+            <i class="fa fa-pencil fa-inverse"></i>
+            <h2>EDUCATORS</h2>
+            <p>
+              Want to bring this initiate to your school or institution? Awesome! click the button below and we'll make
+              it
+              happen.
+            </p>
+            <button>Join The Initiative »</button>
+          </div>
+          <div class="get-involved-bloc">
+            <i class="fa fa-money fa-inverse"></i>
+            <h2>SPONSORS</h2>
+            <p>
+              We love all the support we get to help host more events, and empower more live with the knwoledge of
+              coding.
+              Click to get involved.
+            </p>
+            <button>Give Support »</button>
+          </div>
+        </div>
+      </div>
+    </div><!-- /#get-involved -->
+
+
+    <footer>
+      <!-- Votre code ici -->
+      <div class="footer">
+        <img src="image/one-million-bottom-brand.png" class="img-footer">
+      </div>
+    </footer>
+      <a id="button"><i class="fas fa-arrow-up btnt"></i></a>
+      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+      <script>
+        jQuery(document).ready(function() {
+          var btn = $('#button');
+          $(window).scroll(function(){
+            if($(window).scrollTop()>500){
+              btn.addClass('Show');
+            }else{
+              btn.removeClass('Show');
+            }
+          });
+
+          btn.on('click', function(e) {
+            e.preventDefault();
+            $('html, body').animate({scrollTop:0}, '300');
+          });
+        });
+        
+      </script>
+
+
+<script src=”https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js”></script>
+
+</body>
+
+</html>
